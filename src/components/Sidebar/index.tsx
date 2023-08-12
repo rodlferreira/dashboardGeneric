@@ -4,6 +4,7 @@ import { Logo } from "./Logo";
 import { MainNavigation } from "./MainNavigation";
 import { NavItem } from "./MainNavigation/NavItem";
 import { UsedSpaceWidget } from "./MainNavigation/UsedSpaceWidget";
+import { Profile } from "./Profile";
 
 export function Sidebar() {
     return (
@@ -21,6 +22,8 @@ export function Sidebar() {
                     <NavItem title="Settings" icon={GearSix} />
                 </nav>
                 <UsedSpaceWidget />
+                <div className="h-px bg-zinc-200 "/> 
+                <Profile />
             </div>
         </aside>
     )
