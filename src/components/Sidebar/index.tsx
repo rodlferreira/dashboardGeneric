@@ -5,15 +5,18 @@ import { MainNavigation } from "./MainNavigation";
 import { NavItem } from "./MainNavigation/NavItem";
 import { UsedSpaceWidget } from "./MainNavigation/UsedSpaceWidget";
 import { Profile } from "./Profile";
+import { InpuRoot, InputControl, InputPrefix } from "../Input";
 
 export function Sidebar() {
     return (
         <aside className="border-r border-zinc-200 px-5 py-8 flex flex-col gap-6 ">
             <Logo />
-            <div className="flex mx-1 w-full items-center gap-2 rounded-lg border border-zinc-300 px-3 py-2 shadow-sm">
-                <MagnifyingGlass className="h-5 w-5 text-zinc-500" />
-                <input className="flex-1 border-0 bg-transparent p-0 text-zinc-900 placeholder-zinc-600" placeholder="Search" />
-            </div>
+            <InpuRoot>
+                <InputPrefix>
+                    <MagnifyingGlass className="h-5 w-5 text-zinc-500" />
+                </InputPrefix>
+                <InputControl placeholder="Search" />
+            </InpuRoot>
             <MainNavigation />
 
             <div className="mt-auto flex flex-col gap-6">
@@ -22,7 +25,7 @@ export function Sidebar() {
                     <NavItem title="Settings" icon={GearSix} />
                 </nav>
                 <UsedSpaceWidget />
-                <div className="h-px bg-zinc-200 "/> 
+                <div className="h-px bg-zinc-200 " />
                 <Profile />
             </div>
         </aside>

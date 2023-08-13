@@ -18,7 +18,7 @@ export function Profile() {
                 </span>
             </div>
             <button type="button" className="ml-auto rounded p-2 hover:bg-zinc-100">
-                <UserSwitch className="h-5 w-5 tex-zinc-500"/>
+                <UserSwitch className="h-5 w-5 tex-zinc-500" />
             </button>
         </div>
     )
