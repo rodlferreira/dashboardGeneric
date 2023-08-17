@@ -5,18 +5,18 @@ import { MainNavigation } from "./MainNavigation";
 import { NavItem } from "./MainNavigation/NavItem";
 import { UsedSpaceWidget } from "./MainNavigation/UsedSpaceWidget";
 import { Profile } from "./Profile";
-import { InpuRoot, InputControl, InputPrefix } from "../Input";
+import { InputRoot, InputControl, InputPrefix } from "../Input";
 
 export function Sidebar() {
     return (
         <aside className="border-r border-zinc-200 px-5 py-8 flex flex-col gap-6 ">
             <Logo />
-            <InpuRoot>
+            <InputRoot>
                 <InputPrefix>
                     <MagnifyingGlass className="h-5 w-5 text-zinc-500" />
                 </InputPrefix>
                 <InputControl placeholder="Search" />
-            </InpuRoot>
+            </InputRoot>
             <MainNavigation />
 
             <div className="mt-auto flex flex-col gap-6">
