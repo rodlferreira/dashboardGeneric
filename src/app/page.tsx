@@ -2,8 +2,10 @@
 
 import { SettingsTabs } from "@/components/SettingsTabs";
 import { InputRoot, InputControl, InputPrefix } from "@/components/Input";
-import { Code, Envelope, GlobeStand } from "@phosphor-icons/react";
+import { CaretDown, Code, Envelope, GlobeStand } from "@phosphor-icons/react";
 import * as FileInput from '@/components/Form/FileInput'
+import { Select } from "@/components/Form/Select";
+import { SelectItem } from "@/components/Form/Select/SelectItem";
 
 export default function Home() {
   return (
@@ -107,8 +109,14 @@ export default function Home() {
               className="text-sm font-medium text-zinc-700">
               Country
             </label>
-            <GlobeStand className="w-5 h-5 text-zinc-500" />
-            <div></div>
+              <Select placeholder="Select a country...">
+                <SelectItem value="pt" text="Portugal"/>
+                <SelectItem value="br" text="Brazil"/>
+                <SelectItem value="jp" text="Japão"/>
+                <SelectItem value="fr" text="France"/>
+                <SelectItem value="it" text="Italy"/>
+                <SelectItem value="de" text="Germany"/>
+              </Select>
           </div>
 
           <div className="grid grid-cols-form gap-3 pt-5">
@@ -116,7 +124,15 @@ export default function Home() {
               className="text-sm font-medium text-zinc-700">
               Time Zone
             </label>
-            <div></div>
+            {/* Modificar  de forma correta */}
+            <Select placeholder="Select a timezone...">
+                <SelectItem value="pt" text="Lisboa"/>
+                <SelectItem value="br" text="Brasília"/>
+                <SelectItem value="jp" text="Tokio"/>
+                <SelectItem value="fr" text="Paris"/>
+                <SelectItem value="it" text="Palermo"/>
+                <SelectItem value="de" text="Berlim"/>
+              </Select>
           </div>
 
           <div className="grid grid-cols-form gap-3 pt-5">
