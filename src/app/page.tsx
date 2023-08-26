@@ -2,10 +2,11 @@
 
 import { SettingsTabs } from "@/components/SettingsTabs";
 import { InputRoot, InputControl, InputPrefix } from "@/components/Input";
-import { CaretDown, Code, Envelope, GlobeStand } from "@phosphor-icons/react";
+import { CaretDown, Code, Envelope, GlobeStand, Link, ListDashes, ListNumbers, TextB, TextItalic, UserSwitch } from "@phosphor-icons/react";
 import * as FileInput from '@/components/Form/FileInput'
 import { Select } from "@/components/Form/Select";
 import { SelectItem } from "@/components/Form/Select/SelectItem";
+import { Textarea } from "@/components/Form/Select/Textarea";
 
 export default function Home() {
   return (
@@ -109,14 +110,14 @@ export default function Home() {
               className="text-sm font-medium text-zinc-700">
               Country
             </label>
-              <Select placeholder="Select a country...">
-                <SelectItem value="pt" text="Portugal"/>
-                <SelectItem value="br" text="Brazil"/>
-                <SelectItem value="jp" text="Japão"/>
-                <SelectItem value="fr" text="France"/>
-                <SelectItem value="it" text="Italy"/>
-                <SelectItem value="de" text="Germany"/>
-              </Select>
+            <Select placeholder="Select a country...">
+              <SelectItem value="pt" text="Portugal" />
+              <SelectItem value="br" text="Brazil" />
+              <SelectItem value="jp" text="Japão" />
+              <SelectItem value="fr" text="France" />
+              <SelectItem value="it" text="Italy" />
+              <SelectItem value="de" text="Germany" />
+            </Select>
           </div>
 
           <div className="grid grid-cols-form gap-3 pt-5">
@@ -126,13 +127,13 @@ export default function Home() {
             </label>
             {/* Modificar  de forma correta */}
             <Select placeholder="Select a timezone...">
-                <SelectItem value="pt" text="Lisboa"/>
-                <SelectItem value="br" text="Brasília"/>
-                <SelectItem value="jp" text="Tokio"/>
-                <SelectItem value="fr" text="Paris"/>
-                <SelectItem value="it" text="Palermo"/>
-                <SelectItem value="de" text="Berlim"/>
-              </Select>
+              <SelectItem value="pt" text="Lisboa" />
+              <SelectItem value="br" text="Brasília" />
+              <SelectItem value="jp" text="Tokio" />
+              <SelectItem value="fr" text="Paris" />
+              <SelectItem value="it" text="Palermo" />
+              <SelectItem value="de" text="Berlim" />
+            </Select>
           </div>
 
           <div className="grid grid-cols-form gap-3 pt-5">
@@ -147,7 +148,36 @@ export default function Home() {
               </span>
             </label>
 
-            <div></div>
+            <div className="space-y-3">
+              <div className="grid gap-3 grid-cols-2">
+                <Select placeholder="" defaultValue="normal">
+                  <SelectItem value="normal" text="Normal Text" />
+                  <SelectItem value="md" text="Markdown" />
+                </Select>
+
+                <div className="flex items-center gap-1">
+                  <button type="button" className="rounded p-2 hover:bg-zinc-100">
+                    <TextB className="h-5 w-5 tex-zinc-500" />
+                  </button>
+                  <button type="button" className="rounded p-2 hover:bg-zinc-100">
+                    <TextItalic className="h-5 w-5 tex-zinc-500" />
+                  </button>
+                  <button type="button" className="rounded p-2 hover:bg-zinc-100">
+                    <Link className="h-5 w-5 tex-zinc-500" />
+                  </button>
+                  <button type="button" className="rounded p-2 hover:bg-zinc-100">
+                    <ListDashes className="h-5 w-5 tex-zinc-500" />
+                  </button>
+                  <button type="button" className="rounded p-2 hover:bg-zinc-100">
+                    <ListNumbers className="h-5 w-5 tex-zinc-500" />
+                  </button>
+                </div>
+              </div>
+              <Textarea
+                id="bio"
+                defaultValue="Write here your bio..."
+              />
+            </div>
 
           </div>
 
