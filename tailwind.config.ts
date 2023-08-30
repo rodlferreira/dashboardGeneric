@@ -24,6 +24,27 @@ const config: Config = {
         }
       },
 
+      maxWidth: {
+        app: '700px'
+      },
+
+      // ## verificar a possibilidade de estilizar o select ##
+      // keyframes: {
+      //   slideDownAndFade: {
+      //     from: { opacity: 0 },
+      //     to: { opacity: 1 },
+      //   },
+      //   slideUpAndFade: {
+      //       from: { opacity: 1 },
+      //       to: { opacity: 0 },
+      //   },
+      // },
+
+      // animation: {
+      //   slideDownAndFade: 'slideDownAndFade is linear',
+      //   slideUpAndFade: 'slideUpAndFade is linear',
+      // },
+
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
