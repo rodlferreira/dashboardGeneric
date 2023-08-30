@@ -157,21 +157,31 @@ export default function Home() {
                 </Select>
 
                 <div className="flex items-center gap-1">
-                  <button type="button" className="rounded p-2 hover:bg-zinc-100">
+                  <Button
+                    type="button"
+                    variant="ghost">
                     <TextB className="h-5 w-5 tex-zinc-500" />
-                  </button>
-                  <button type="button" className="rounded p-2 hover:bg-zinc-100">
+                  </Button>
+                  <Button
+                    type="button"
+                    variant="ghost">
                     <TextItalic className="h-5 w-5 tex-zinc-500" />
-                  </button>
-                  <button type="button" className="rounded p-2 hover:bg-zinc-100">
+                  </Button>
+                  <Button
+                    type="button"
+                    variant="ghost">
                     <Link className="h-5 w-5 tex-zinc-500" />
-                  </button>
-                  <button type="button" className="rounded p-2 hover:bg-zinc-100">
+                  </Button>
+                  <Button
+                    type="button"
+                    variant="ghost">
                     <ListDashes className="h-5 w-5 tex-zinc-500" />
-                  </button>
-                  <button type="button" className="rounded p-2 hover:bg-zinc-100">
+                  </Button>
+                  <Button
+                    type="button"
+                    variant="ghost">
                     <ListNumbers className="h-5 w-5 tex-zinc-500" />
-                  </button>
+                  </Button>
                 </div>
               </div>
               <Textarea
