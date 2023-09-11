@@ -10,11 +10,11 @@ export function Profile() {
                 alt="Foto de perfil"
             />
             <div className="truncate flex flex-col">
-                <span className="text-sm font-semibold text-zinc-700">
+                <span className="text-sm font-semibold text-zinc-700 dark:text-zinc-100">
                     Rodriggo Ferreira
                 </span>
 
-                <span className="truncate text-sm text-zinc-500">
+                <span className="truncate text-sm text-zinc-500 dark:text-zinc-400">
                     rodriggo.lferreira@icloud.com
                 </span>
             </div>
